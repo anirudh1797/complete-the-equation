@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+body {
+	background: #2D3142;
+	font-family: 'Raleway', sans-serif;
+}
+
+#container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 0 150px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 3.5em;
+	text-align: center;
+	padding: 70px 0 0 0;
+	color: #EF8354;
+	font-weight: 300;
+	letter-spacing: 1px;
+  }
+  
+
+.button {
+	display: inline-flex;
+	height: 40px;
+	width: 150px;
+	border: 2px solid #BFC0C0;
+	margin: 20px 20px 20px 20px;
+	color: #BFC0C0;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .8em;
+	letter-spacing: 1.5px;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+a {
+	color: #BFC0C0;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+#start-button {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+  
+#start-button a {
+	position: relative;
+	margin: 0 auto;
+	transition: all .35s ease-Out;
+}
+  
+#slide {
+	width: 100%;
+	height: 100%;
+	left: -200px;
+	background: #BFC0C0;
+	position: absolute;
+	transition: all .35s ease-Out;
+	bottom: 0;
+}
+  
+#start-button:hover #slide {
+	left: 0;
+}
+  
+#start-button:hover a {
+	color: #2D3142;
+}
+  
+
+#start-div {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#build-div {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: none;
+}
+
+#build-div label{
+	color: wheat;
+	font-size: 2em;
+}
+
+#backspace{
+	background-color: red;
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	margin: 2px 2px;
+	cursor: pointer;
+}
+#reset{
+	background-color: green;
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	margin: 2px 2px;
+	cursor: pointer;
+}
+
+#build-select {
+	margin-top: 10;
+	margin-bottom: 10;
+}
+
+
+#build-table-input-button-div {
+	position: relative;
+	margin: 0 auto;
+	top: 50%;
+	text-align: center;
+}
+#build-input {
+	width: 80%;
+	padding: 12px;
+	margin:12px;
+  	border: 1px solid #ccc;
+	border-radius: 4px;
+	opacity: 0.7;
+	font-size: 1.1em;
+}
+
+#build-table {
+	margin: 0 auto;
+}
+
+#build-table button{
+	background-color: #EF8354;
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	margin: 2px 2px;
+	cursor: pointer;
+}
+
+#build-button-div {
+	position: relative;
+	margin-top: 10;
+}
+#build-button {
+	position: relative;
+	margin: 0 auto;
+	transition: all .35s ease-Out;
+}
+
+#build-button a {
+	position: relative;
+	margin: 0 auto;
+	transition: all .35s ease-Out;
+}
+
+#build-button:hover #slide {
+	left: 0;
+}
+  
+#build-button:hover a {
+	color: #2D3142;
+}
+  
+#game-div {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: none;
+}
+
+#game-player{
+	font-size: 1.5em;
+	color: rgb(253, 0, 42) 
+}
+#game-span {
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+}
+.game-child {
+	font-size: 1.5em;
+	color: gold;
+}
+#game-time{
+	padding:10px;
+	margin:2px;
+	font-size: 1.2em;
+	color: #fff;
+}
+.game-input {
+	width: 5%;
+	margin: 10px;
+	text-align: center;
+}
+#game-button {
+	display: flex;
+	background-color: rgba(18, 168, 18, 0.774);
+	height: 40px;
+	width: 150px;
+	border: 2px solid #BFC0C0;
+	margin: auto;
+	margin-top: 25px;
+	color: #BFC0C0;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .8em;
+	letter-spacing: 1.5px;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#game-score{
+	font-size: 1.5em;
+	color: white;
+}
+
+#result-div {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: none;
+}
+#score-result-play-again {
+	position: relative;
+	margin: 0 auto;
+	top: 50%;
+}
+#result {
+	font-size:2em;
+	color:white;
+}
+#play-again-div {
+}
+#play-again {
+	display: flex;
+	background-color:rgb(202, 221, 34);
+	height: 40px;
+	width: 150px;
+	border: 2px solid #BFC0C0;
+	margin: auto;
+	margin-top: 25px;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .8em;
+	letter-spacing: 1.5px;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 3em;
+}
+
+.select-css {
+	display: inline-block;
+	margin-left:15px;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 20%;
+	max-width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	border-radius: .5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+}
+.select-css::-ms-expand {
+	display: none;
+}
+.select-css:hover {
+	border-color: #888;
+}
+.select-css:focus {
+	border-color: #aaa;
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+.select-css option {
+	font-weight:normal;
+}
+
